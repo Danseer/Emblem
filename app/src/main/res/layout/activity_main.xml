@@ -28,7 +28,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/tb_ph_date"
-        android:fontFamily="@font/astloch"
+        android:fontFamily="@font/astloch_bold"
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/field_date"
         android:textColor="@android:color/white"
