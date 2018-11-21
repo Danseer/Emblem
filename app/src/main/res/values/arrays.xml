@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="touch_area_menu_button">
-        <item>0 0 73 22</item>
-        <item>58 33 135 34</item>
-        <item>44 48 45 38</item>
-        <item>167 48 45 38</item>
+        <item>10 10 140 60</item>
     </array>
     <array name="touch_area_shop_button">
-        <item>25 22 49 69</item>
-        <item>45 82 45 42</item>
-        <item>72 94 51 53</item>
+        <item>5 5 140 60</item>
     </array>
     <array name="touch_area_pause_button">
-        <item>55 22 46 71</item>
-        <item>58 33 48 34</item>
-        <item>5 81 47 51</item>
+        <item>1 35 140 30</item>
+        <item>80 10 50 50</item>
     </array>
     <array name="touch_area_normal_button">
-        <item>25 22 49 69</item>
-        <item>45 82 45 42</item>
-        <item>72 94 51 53</item>
+        <item>1 10 150 50</item>
     </array>
     <array name="touch_area_accelerated_button">
-        <item>55 22 46 71</item>
-        <item>58 33 48 34</item>
-        <item>5 81 47 51</item>
+        <item>10 10 50 40</item>
+        <item>50 30 50 30</item>
+        <item>10 15 130 30</item>
+        <item>110 10 30 60</item>
     </array>
 </resources>
