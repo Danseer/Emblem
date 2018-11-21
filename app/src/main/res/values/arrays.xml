@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="touch_area_menu_button">
-        <item>90 18 73 22</item>
+        <item>0 0 73 22</item>
         <item>58 33 135 34</item>
         <item>44 48 45 38</item>
         <item>167 48 45 38</item>

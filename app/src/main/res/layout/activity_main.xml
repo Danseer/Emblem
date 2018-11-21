@@ -30,6 +30,7 @@
         android:fontFamily="@font/astloch"
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/field_date"
+        android:textColor="@android:color/white"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

@@ -14,7 +14,7 @@ import android.view.MotionEvent;
 import android.widget.Button;
 
 
-public class CustomButton extends Button {
+public class CustomButton extends android.support.v7.widget.AppCompatButton {
 
     private Region touchRegion = new Region();
 
@@ -23,11 +23,15 @@ public class CustomButton extends Button {
     }
 
     public CustomButton(Context context, AttributeSet attrs) {
+
         super(context, attrs);
+        initStyleButton(attrs);
     }
 
     public CustomButton(Context context, AttributeSet attrs, int defStyleAttr) {
+
         super(context, attrs, defStyleAttr);
+        initStyleButton(attrs);
     }
 
     @Override
@@ -41,7 +45,7 @@ public class CustomButton extends Button {
     }
 
     private void initStyleButton(AttributeSet attrs) {
-        @SuppressLint("CustomViewStyleable") TypedArray a = getContext().obtainStyledAttributes(attrs,
+        TypedArray a = getContext().obtainStyledAttributes(attrs,
                 R.styleable.TouchAreaButton);
 
         int areaId = a.getResourceId(R.styleable.TouchAreaButton_toucharea, 0);
