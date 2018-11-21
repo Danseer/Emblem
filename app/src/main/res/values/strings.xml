@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">Emblem</string>
+    <string name="app_name">MusicBox</string>
     <string name="field_date">01.01.1917</string>
     <string name="todo">TODO</string>
+    <string name="button_menu">1</string>
+    <string name="button_shop">2</string>
+    <string name="button_pause">3</string>
+    <string name="button_normal">4</string>
+    <string name="button_accelerated">5</string>
+    <string name="alert_dialog_positive_button">ОК</string>
 </resources>
