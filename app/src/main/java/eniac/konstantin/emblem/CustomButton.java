@@ -1,17 +1,18 @@
 package eniac.konstantin.emblem;
 
 
-import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Rect;
 import android.graphics.Region;
 import android.graphics.Region.Op;
+import android.support.v7.app.AlertDialog;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.MotionEvent;
-import android.widget.Button;
+
 
 
 public class CustomButton extends android.support.v7.widget.AppCompatButton {
@@ -40,6 +41,21 @@ public class CustomButton extends android.support.v7.widget.AppCompatButton {
             if (!touchRegion.contains((int) event.getX(), (int) event.getY())) {
                 return false;
             }
+            else{
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                builder.setTitle("Нажата кнопка")
+                        .setMessage( String.valueOf(this.getContentDescription()))
+                        .setCancelable(false)
+                        .setNegativeButton("Ok",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.cancel();
+                                    }
+                                });
+                AlertDialog alert = builder.create();
+                alert.show();
+            }
+
         }
         return super.onTouchEvent(event);
     }
